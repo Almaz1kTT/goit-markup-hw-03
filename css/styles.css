@@ -48,6 +48,11 @@ h6,
 p {
   margin: 0;
 }
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 .container {
   width: 1158px;
   margin: 0 auto;
@@ -57,6 +62,9 @@ p {
   padding: 120px 0;
 }
 /*Header*/
+.header {
+  border-bottom: 1px solid #e7e9fc;
+}
 .logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -84,7 +92,6 @@ p {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  border-bottom: 1px solid #e7e9fc;
 }
 
 .menu-nav {
@@ -128,10 +135,10 @@ p {
 /* MAIN*/
 .section-main {
   background-color: var(--navy-blue);
-  padding: 188px 0; /* великий вертикальний відступ для всієї секції */
+  padding: 188px 0;
   max-width: 1440px;
   margin: 0 auto;
-  text-align: center; /* центрує текст і кнопку всередині container */
+  text-align: center;
 }
 
 .main-title {
@@ -141,8 +148,8 @@ p {
   letter-spacing: 0.02em;
   text-align: center;
   color: var(--white);
-  margin: 0 auto 48px; /* відступ знизу до кнопки — 48px */
-  max-width: 496px; /* щоб текст не розтягувався на всю ширину (як в макеті) */
+  margin: 0 auto 48px;
+  max-width: 496px;
 }
 
 .button {
@@ -181,7 +188,7 @@ p {
   gap: 24px;
   align-items: center;
   margin: 0 auto;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .container-main > li {
@@ -213,6 +220,11 @@ p {
   align-items: center;
 }
 
+.title-team,
+.title-portfolio {
+  margin-bottom: 72px;
+}
+
 .team-card-text {
   padding: 32px 16px;
   text-align: center;
@@ -233,7 +245,6 @@ p {
   letter-spacing: 0.02em;
   text-align: center;
   color: var(--navy-blue);
-  padding-bottom: 72px;
 }
 
 .title-team-name {
@@ -243,7 +254,7 @@ p {
   letter-spacing: 0.02em;
   text-align: center;
   color: var(--navy-blue);
-  padding-bottom: 8px;
+  margin-bottom: 8px;
 }
 
 .paragraph-team {
@@ -269,7 +280,7 @@ p {
   display: flex;
   flex-wrap: wrap;
   gap: 48px 24px;
-  justify-content: center;
+  justify-content: space-between;
   width: 100%;
 }
 
@@ -293,7 +304,6 @@ p {
   letter-spacing: 0.02em;
   text-align: center;
   color: var(--navy-blue);
-  padding-bottom: 72px;
 }
 
 .h-portfolio {
@@ -302,8 +312,7 @@ p {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--navy-blue);
-  padding-bottom: 8px;
-  padding-left: 16px;
+  margin-bottom: 8px;
 }
 
 .paragraph-portfolio {
@@ -312,7 +321,6 @@ p {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--slate);
-  padding-left: 16px;
 }
 
 /* footer */
@@ -329,8 +337,8 @@ p {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--cloud);
-  padding: 17.5px 0;
   display: block;
+  margin-bottom: 16px;
 }
 
 .footer-paragraf {
