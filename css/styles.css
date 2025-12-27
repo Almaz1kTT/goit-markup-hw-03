@@ -125,6 +125,7 @@ img {
   letter-spacing: 0.02em;
   color: #434455;
   padding: 24px 0;
+  display: block;
 }
 
 .address-link:hover,
@@ -136,8 +137,6 @@ img {
 .section-main {
   background-color: var(--navy-blue);
   padding: 188px 0;
-  max-width: 1440px;
-  margin: 0 auto;
   text-align: center;
 }
 
@@ -280,7 +279,6 @@ img {
   display: flex;
   flex-wrap: wrap;
   gap: 48px 24px;
-  justify-content: space-between;
   width: 100%;
 }
 
